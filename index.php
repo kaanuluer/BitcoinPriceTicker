@@ -1,4 +1,6 @@
 <?php
+
+// Json ile belirli sitlerin apilerinden bitcoin fiyatlarını almak için gerekli kodlar
 $btct = file_get_contents("https://www.btcturk.com/api/ticker"); 
 $btctdecode = json_decode($btct, true); 
 $btctdecode ['last']; 
